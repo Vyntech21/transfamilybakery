@@ -159,7 +159,7 @@ footer .wrap{grid-template-columns:1fr}
 
 <header>
  <div class="wrap nav">
-  <a href="#beranda"><img src="" alt="Trans Family" height="46"></a>
+  <a href="#beranda"><img src="https://transfamilybakery.com/wp-content/uploads/2025/09/logo-trans-family.webp" alt="Trans Family" height="46"></a>
   <button class="burger" onclick="document.getElementById('m').classList.toggle('open')" aria-label="Menu">☰</button>
   <ul class="menu" id="m">
    <li><a href="#beranda" class="on">Beranda</a></li>
@@ -175,7 +175,7 @@ footer .wrap{grid-template-columns:1fr}
 </header>
 
 <section class="hero" id="beranda">
- <img class="corner" src="" alt=""><img class="cookie" src="" alt="">
+ <img class="corner" src="https://transfamilybakery.com/wp-content/uploads/2025/09/logo-trans-family.webp" alt=""><img class="cookie" src="" alt="">
  <div class="wrap">
   <img class="logo-big" src="https://transfamilybakery.com/wp-content/uploads/2025/09/logo-trans-family.webp" width="400" height="322" alt="Trans Family">
   <h1>Oleh-Oleh Khas Langkat</h1>
