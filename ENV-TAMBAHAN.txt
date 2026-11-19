@@ -1,0 +1,25 @@
+# Tambahkan / ubah di file .env project (jangan commit .env)
+
+APP_TIMEZONE=Asia/Jakarta
+APP_LOCALE=id
+
+BAKERY_WA=6282261011170
+BESTSELLER_LAYOUT=carousel
+
+# --- Pilih SATU database ---
+# A) SQLite (tanpa XAMPP): pakai database/database.sqlite dari paket ini
+DB_CONNECTION=sqlite
+# (hapus/komentari DB_HOST, DB_PORT, DB_DATABASE, DB_USERNAME, DB_PASSWORD)
+
+# B) MySQL
+# DB_CONNECTION=mysql
+# DB_HOST=127.0.0.1
+# DB_PORT=3306
+# DB_DATABASE=transfamily
+# DB_USERNAME=root
+# DB_PASSWORD=
+
+# --- Akun admin (dipakai AdminSeeder; hapus ADMIN_PASSWORD setelah berhasil) ---
+ADMIN_NAME="Admin TransFamily"
+ADMIN_EMAIL=emailanda@contoh.com
+ADMIN_PASSWORD=
