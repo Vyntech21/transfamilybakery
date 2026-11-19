@@ -13,13 +13,15 @@ Halaman: / , /tentang , /katalog , /layanan/si-pesat , /toko , /artikel , /artik
 5. Butuh internet saat dibuka: Swiper, GLightbox, Alpine.js, vanilla-tilt dimuat dari CDN (jsDelivr).
 
 ## Foto
-Taruh file .webp di public/images/ dengan nama di bawah. Belum ada = placeholder otomatis.
-logo, hero-kiri-1..3, hero-kanan-1..3, produk-roti-jadul, produk-roti-modern, produk-kue-ultah,
-produk-cheesecake, produk-khas-langkat, produk-pastry, produk-hampers, kolase-1..5, q3d-1..4,
-tentang-1..3, cerita-pemilik, cerita-tim, cerita-dapur, cerita-ultah,
-outlet-pusat-stabat, outlet-binjai, outlet-stabor, outlet-perniagaan-stabat,
-outlet-pangkalan-berandan, outlet-kuala-simpang
-Foto produk, outlet, dan artikel dari database memakai kolom image (mis. images/rolling-durian.webp).
+Taruh file .webp di public/images/. Belum ada = placeholder otomatis.
+- logo.webp — logo header/beranda
+- hero/ — foto kue di sisi beranda (genap = kiri, ganjil = kanan)
+- hero-bg/ — latar beranda yang berganti otomatis
+- produk/ — foto produk dari database / data cadangan
+- produk-roti-jadul, produk-roti-modern, produk-kue-ultah, produk-cheesecake,
+  produk-khas-langkat, produk-pastry, produk-hampers — kartu Cita Rasa
+- kolase-1..5, q3d-1..4 — dekorasi beranda
+Foto produk, outlet, dan artikel dari database memakai kolom image (mis. images/produk/cheesecake.webp).
 
 ## Pengaturan (.env)
 BAKERY_WA=6282261011170

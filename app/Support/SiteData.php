@@ -195,15 +195,16 @@ class SiteData
     {
         $fallback = [
             'tentang_galeri' => [
-                ['caption' => 'Dari dapur kecil untuk Langkat', 'kind' => null, 'file' => 'images/tentang-1.webp'],
-                ['caption' => 'Setiap pagi, adonan dibuat dengan hati', 'kind' => 'dapur', 'file' => 'images/tentang-2.webp'],
-                ['caption' => 'Tim kami adalah keluarga', 'kind' => 'tim', 'file' => 'images/tentang-3.webp'],
+                ['caption' => 'Dari dapur kecil untuk Langkat', 'kind' => null, 'file' => 'images/kolase-1.webp'],
+                ['caption' => 'Setiap pagi, adonan dibuat dengan hati', 'kind' => 'dapur', 'file' => 'images/kolase-2.webp'],
+                ['caption' => 'Tim kami adalah keluarga', 'kind' => 'tim', 'file' => 'images/kolase-3.webp'],
             ],
+            // Foto orang/dapur belum tersedia; tampilkan placeholder sampai diisi lewat tabel photos.
             'tentang_cerita' => [
-                ['caption' => 'Pemilik', 'kind' => 'pemilik', 'file' => 'images/cerita-pemilik.webp'],
-                ['caption' => 'Tim kami', 'kind' => 'tim', 'file' => 'images/cerita-tim.webp'],
-                ['caption' => 'Suasana dapur', 'kind' => 'dapur', 'file' => 'images/cerita-dapur.webp'],
-                ['caption' => 'Ulang tahun toko', 'kind' => 'ulang_tahun', 'file' => 'images/cerita-ultah.webp'],
+                ['caption' => 'Pemilik', 'kind' => 'pemilik', 'file' => null],
+                ['caption' => 'Tim kami', 'kind' => 'tim', 'file' => null],
+                ['caption' => 'Suasana dapur', 'kind' => 'dapur', 'file' => null],
+                ['caption' => 'Ulang tahun toko', 'kind' => 'ulang_tahun', 'file' => null],
             ],
         ][$placement] ?? [];
 

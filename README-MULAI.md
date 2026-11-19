@@ -28,11 +28,13 @@ Salin SEMUA isi folder ini ke dalam project (timpa bila ditanya). Disarankan pak
 - public/images         : taruh foto .webp di sini (daftar nama: lihat bawah)
 
 ## Foto (public/images, format .webp; belum ada = placeholder)
-logo, hero-kiri-1..3, hero-kanan-1..3, produk-roti-jadul, produk-roti-modern, produk-kue-ultah,
-produk-cheesecake, produk-khas-langkat, produk-pastry, produk-hampers, kolase-1..5, q3d-1..4,
-tentang-1..3, cerita-pemilik, cerita-tim, cerita-dapur, cerita-ultah,
-outlet-pusat-stabat, outlet-binjai, outlet-stabor, outlet-perniagaan-stabat,
-outlet-pangkalan-berandan, outlet-kuala-simpang
+- logo.webp — logo di header dan beranda
+- hero/ — foto kue di sisi beranda (urut nama: genap = kiri, ganjil = kanan)
+- hero-bg/ — foto latar beranda yang berganti otomatis
+- produk/ — foto produk yang dipakai DatabaseSeeder / data cadangan
+- produk-roti-jadul, produk-roti-modern, produk-kue-ultah, produk-cheesecake,
+  produk-khas-langkat, produk-pastry, produk-hampers — kartu Cita Rasa
+- kolase-1..5, q3d-1..4 — dekorasi beranda
 
 ## Catatan
 - Butuh internet saat membuka website (Swiper, GLightbox, Alpine, vanilla-tilt dari CDN).
@@ -43,7 +45,7 @@ outlet-pangkalan-berandan, outlet-kuala-simpang
 logo (latar transparan), hero/ (10 foto), produk-roti-jadul, produk-roti-modern,
 produk-kue-ultah, produk-cheesecake, produk-khas-langkat, produk-hampers, kolase-1..5, q3d-1..4,
 dan di public/images/produk: bolu-switch-roll-mocca, roti-kelapa-ceres, bolu-cake-marmor, cheesecake.
-Yang masih placeholder: produk-pastry, tentang-1..3, cerita-*, outlet-*.
+Yang masih placeholder: produk-pastry, cerita-* (foto orang/dapur), outlet-*.
 Untuk mengganti foto, timpa file dengan nama yang sama (format .webp).
 
 ## Hero bergerak otomatis

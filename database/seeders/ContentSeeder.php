@@ -40,22 +40,26 @@ class ContentSeeder extends Seeder
             Testimonial::firstOrCreate(['quote' => $quote]);
         }
 
-        // Keterangan foto halaman Tentang (file gambar diunggah belakangan)
+        // Foto galeri Tentang memakai aset yang sudah ada di public/images/.
         foreach ([
-            [null,    'Dari dapur kecil untuk Langkat'],
-            ['dapur', 'Setiap pagi, adonan dibuat dengan hati'],
-            ['tim',   'Tim kami adalah keluarga'],
-        ] as $i => [$kind, $caption]) {
-            Photo::firstOrCreate(
+            [null,    'Dari dapur kecil untuk Langkat', 'images/kolase-1.webp'],
+            ['dapur', 'Setiap pagi, adonan dibuat dengan hati', 'images/kolase-2.webp'],
+            ['tim',   'Tim kami adalah keluarga', 'images/kolase-3.webp'],
+        ] as $i => [$kind, $caption, $image]) {
+            Photo::updateOrCreate(
                 ['placement' => 'tentang_galeri', 'caption' => $caption],
-                ['kind' => $kind, 'sort_order' => $i + 1]
+                ['kind' => $kind, 'image' => $image, 'sort_order' => $i + 1]
             );
         }
 
-        // Garis waktu: baru fakta yang sudah ada di website. Tambah tonggak lain sendiri.
+        // Garis waktu: fakta yang sudah ada di website. Tambah tonggak lain sendiri.
         TimelineEvent::updateOrCreate(['year' => 2010, 'title' => 'Trans Family Bakery berdiri'], [
             'description' => 'Berdiri 8 September 2010 di Langkat.',
             'sort_order'  => 1,
+        ]);
+        TimelineEvent::updateOrCreate(['year' => 2026, 'title' => '15 tahun dipercaya'], [
+            'description' => 'Hadir dengan 6 outlet di Langkat, Binjai, dan Kuala Simpang.',
+            'sort_order'  => 2,
         ]);
     }
 }
